@@ -1,0 +1,18 @@
+{
+    "name": "edribeiro/simple-order-pi",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "EdRibeiro\\SimpleOrderApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "edRibeiro",
+            "email": "edersonribeiro.ita@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    }
+}
