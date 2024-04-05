@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Entities;
 
-class ItemOrder
+class ItemPedido
 {
   public function __construct(
     private string $productId,

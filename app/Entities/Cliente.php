@@ -6,11 +6,21 @@ namespace App\Entities;
 
 class Cliente
 {
+  private int $id;
+  private string $nome;
+  private string $cidadeNome;
+  private string $password;
+
   public function __construct(
-    private int $id,
-    private string $nome,
-    private string $cidadeNome
+    int $id,
+    string $nome,
+    string $cidadeNome,
+    string $password
   ) {
+    $this->id = $id;
+    $this->nome = $nome;
+    $this->cidadeNome = $cidadeNome;
+    $this->password = $password;
   }
 
   public function getId(): int
@@ -41,5 +51,15 @@ class Cliente
   public function setCidadeNome(string $cidadeNome): void
   {
     $this->cidadeNome = $cidadeNome;
+  }
+
+  public function getPassword(): string
+  {
+    return $this->password;
+  }
+
+  public function setPassword(string $password): void
+  {
+    $this->password = $password;
   }
 }

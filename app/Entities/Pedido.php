@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Entities;
 
-class Order
+class Pedido
 {
   public function __construct(
     private string $clientId,
@@ -32,7 +32,7 @@ class Order
     $this->items = $items;
   }
 
-  public function addItem(ItemOrder $item): void
+  public function addItem(ItemPedido $item): void
   {
     $this->items[] = $item;
   }
